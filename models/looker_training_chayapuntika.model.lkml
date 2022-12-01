@@ -11,6 +11,7 @@ datagroup: looker_training_chayapuntika_default_datagroup {
 persist_with: looker_training_chayapuntika_default_datagroup
 
 explore: bikeshare_stations {
+  label: "Bikeshare Traffic"
   join: bikeshare_status {
     type: left_outer
     view_label: "Status"
