@@ -7,8 +7,8 @@ view: bikeshare_trips {
     sql: ${TABLE}.bike_number ;;
   }
 
-  dimension: duration_sec {
-    type: number
+  measure: duration_sec {
+    type: sum
     sql: ${TABLE}.duration_sec ;;
   }
 

@@ -16,6 +16,13 @@ explore: bikeshare_stations {
     type: left_outer
     view_label: "Status"
     relationship: one_to_one
-    sql_on: ${bikeshare_status.station_id} = ${bikeshare_status.station_id} ;;
+    sql_on: ${bikeshare_stations.station_id} = ${bikeshare_status.station_id} ;;
+  }
+
+  join: bikeshare_trips {
+    type: inner
+    view_label: "Trip"
+    relationship: one_to_many
+    sql_on: ${bikeshare_stations.station_id} = ${bikeshare_trips.start_station_id} or ${bikeshare_stations.station_id} = ${bikeshare_trips.end_station_id}  ;;
   }
 }
