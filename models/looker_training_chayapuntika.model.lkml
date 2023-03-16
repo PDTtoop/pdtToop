@@ -9,7 +9,7 @@ datagroup: looker_training_chayapuntika_default_datagroup {
 }
 
 persist_with: looker_training_chayapuntika_default_datagroup
-#NUT HAHA
+
 explore: bikeshare_stations {
   label: "Bikeshare Traffic"
   join: bikeshare_status {
