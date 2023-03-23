@@ -4,6 +4,7 @@ view: bikeshare_stations {
 
   dimension: dockcount {
     type: number
+    #comment
     sql: ${TABLE}.dockcount ;;
   }
 
